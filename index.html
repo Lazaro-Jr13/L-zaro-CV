@@ -1,66 +1,498 @@
-<<!DOCTYPE html>
-<html>
-  <head>
-    <title>Lazaro Aurelio Conjo Junior </title>
-  </head>
-  <body>
-    <h1 align="center">Currículum Vitae</h1>
-    <h2 align="center">Lazaro Aurelio Conjo Junior</h2>
-    <<h3>PERFIL</h3>
-    <p>Possui 10 anos de idade, solteiro, de nacionalidade Moçambicana. Sou responsável, dedicada a ajudar os alunos a progredirem positivamente no aprendizado. Carrego comigo a satisfação dos bons resultados obtidos pelos alunos.</p>
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo - Lázaro Aurélio Conjo Júnior</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #1a252f;
+            --secondary-color: #f39c12;
+            --text-color: #333;
+            --bg-light: #f4f6f9;
+            --white: #ffffff;
+        }
 
-<h3>PONTOS FORTES</h3>
-<p>•Alto nível de motivação;</p>
-<p>•Criatividade</p>
-<p>•Excelente comunicação, oral e escrita;</p>
-<p>•Boa análise e resolução de problemas;</p>
-<p>•Orientação para a qualidade;</p>
-<p>•Alto nível de Planeamento e organização;</p>
-<p>•Boa capacidade de negociação;</p>
-<p>•Sigilo Profissional;</p>
-<p>•Disponibilidade imediata.</p>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
 
-<h3>LINGUAS</h3>
-<p>•Português</p>
-<p>•Inglês</p>
-<p>•Changana</p>
-<p>•Francês</p>
+        body {
+            background-color: var(--bg-light);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 20px 0;
+        }
 
-	<h3>FORMAÇÃO ACADÉMICA</h3>
-<p>•	2023: Nível Médio (Curso Médio de Formação de Professores Primário) no INSTITUTO DE FORMACAO DE PROFESSORES DE CHICUQUE;</p>
-<p>•	2018:  Nível Básico (Curso Básico de Formação de Professores Primário) no INSTITUTO DE FORMACAO DE PROFESSORES EDUARDO CHIVAMBO MONDLANE;</p>
-<p>•	2016: Terminou o 2º Ciclo do ESG na Escola Secundária de Inhamissa;</p>
-<p>•	2014: Terminou o 1º Ciclo do ESG na Escola Secundária de Inhamissa;</p>
-<p>•	2010: Terminou o Ensino Primário na Escola Primária Completa 4 de Outubro.</p>
+        .container {
+            max-width: 1050px;
+            margin: 0 auto;
+            background: var(--white);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            border-radius: 8px;
+            overflow: hidden;
+        }
 
-<h3>CURSOS SUPLEMENTARES</h3>
-<p>•	Possui curso de Refrigeração e climatização na IFPLAC.</p>
-<p>•	Curso Básico de Informática na óptica do utilizador na UDEBA–Lab;</p>
-<p>•	Domínio de informática na óptica do utilizador (Microsoft Excel, Power Point, World).</p>
+        /* --- COLUNA ESQUERDA (Sidebar) --- */
+        .sidebar {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 40px 30px;
+        }
 
+        .profile-zone {
+            text-align: center;
+            margin-bottom: 40px;
+        }
 
-<h3>EXPERIÊNCIA PROFISSIONAL</h3>
-<p>2020- até então: Professor afeto na Escola Primaria de Chamane, localidade de Malaia, Distrito de Morrumbene.</p>
-<p>2018, 2019 - Participou nas Eleições Gerais como MMV na cidade de Xai-xai.</p>
-<p>2015 - Desde o ano de 2015 trabalha com estudantes do ensino secundário Geral, como orientador nas mais diversas actividades escolares (aulas orientadas, explicação para os exames de admissão nas diversas disciplinas).</p>
+        .profile-img {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            border: 4px solid var(--secondary-color);
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
 
-<h3>Habilidades</h3>
-<p>•	Capacidade de Leccionar a todas disciplinas no EPG, no Ensino Básico e Médio em instituições de ensino especial, ensino vocacional e de formação inicial e contínua de professores.</p>
-<p>•	Capacidade de participar em actividades escolares não lectivas tais como direcção de turma, chefia de grupo de disciplina, administração escolar e orientação de actividades extracurriculares;</p>
-<p>•	Capacidade de conceber, realizar e participar em projectos de investigação educacional.</p>
+        .profile-zone h1 {
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 5px;
+            letter-spacing: 0.5px;
+        }
 
-<h3>CAPACITAÇÕES e WOEKSHOPS</h3>
-<p>2023 – Participou no Workshop sobre repensat as (in) justiças populares em África através das Redes sociais.</p>
-<p>2017 – Participou da capacitação em técnicas de pesquisa de dados pela IPSOS</p>
-<p>2017 - Participou da capacitação para activista no projecto Positivo.</p>
+        .profile-zone p {
+            color: var(--secondary-color);
+            font-size: 16px;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
 
-<h3>CONTACTOS</h3>
-<p>Telefone: +258 84 924 3544/ +258 87 924 3544</p>
+        .sidebar-section {
+            margin-bottom: 35px;
+        }
 
-<p>Email:  lazaro199710@gmail.com</p>
+        .sidebar-title {
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            color: var(--white);
+        }
 
-<h3>RESIDÊNCIA</h3>
-<p>BAIRRO 03 de INHAMISSA</p>
-  </body>
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+            font-size: 14px;
+        }
+
+        .contact-item i {
+            margin-right: 12px;
+            color: var(--secondary-color);
+            width: 20px;
+            text-align: center;
+        }
+
+        .contact-item a {
+            color: var(--white);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .contact-item a:hover {
+            color: var(--secondary-color);
+        }
+
+        .skills-list, .lang-list {
+            list-style: none;
+        }
+
+        .skills-list li, .lang-list li {
+            font-size: 14px;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+        }
+
+        .skills-list li::before, .lang-list li::before {
+            content: "•";
+            color: var(--secondary-color);
+            font-weight: bold;
+            display: inline-block;
+            width: 15px;
+            font-size: 18px;
+        }
+
+        /* --- COLUNA DIREITA (Conteúdo Principal) --- */
+        .main-content {
+            padding: 40px;
+            background: var(--white);
+        }
+
+        .main-section {
+            margin-bottom: 40px;
+        }
+
+        .main-title {
+            font-size: 20px;
+            color: var(--primary-color);
+            text-transform: uppercase;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .main-title i {
+            margin-right: 10px;
+            color: var(--primary-color);
+        }
+
+        .resume-text {
+            font-size: 15px;
+            text-align: justify;
+        }
+
+        .timeline-item {
+            margin-bottom: 25px;
+            position: relative;
+            padding-left: 20px;
+            border-left: 2px solid #e2e8f0;
+        }
+
+        .timeline-item::before {
+            content: "";
+            position: absolute;
+            left: -6px;
+            top: 5px;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: var(--secondary-color);
+        }
+
+        .timeline-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 5px;
+            flex-wrap: wrap;
+        }
+
+        .timeline-title {
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
+        .timeline-date {
+            font-size: 13px;
+            background-color: var(--bg-light);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+
+        .timeline-institution {
+            font-size: 14px;
+            font-weight: 600;
+            color: #555;
+            margin-bottom: 5px;
+        }
+
+        .timeline-desc {
+            font-size: 14px;
+            color: #666;
+            text-align: justify;
+        }
+
+        .grade {
+            font-weight: bold;
+            color: var(--secondary-color);
+        }
+
+        /* Responsividade para telemóveis */
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+            .sidebar {
+                padding: 30px 20px;
+            }
+            .main-content {
+                padding: 30px 20px;
+            }
+            .timeline-header {
+                flex-direction: column;
+            }
+            .timeline-date {
+                margin-top: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    
+    <aside class="sidebar">
+        <div class="profile-zone">
+            <img src="https://via.placeholder.com/160" alt="Lázaro Aurélio Conjo Júnior" class="profile-img">
+            <h1>Lázaro Aurélio<br>Conjo Júnior</h1>
+            <p>Professor</p>
+        </div>
+
+        <div class="sidebar-section">
+            <h2 class="sidebar-title">Contacto</h2>
+            <div class="contact-item">
+                <i class="fa-solid fa-cake-candles"></i>
+                <span id="birth-info">12 de Outubro de 1997 (<span id="age"></span> anos)</span>
+            </div>
+            <div class="contact-item">
+                <i class="fa-solid fa-phone"></i>
+                <span>+258 879 243 544 / 849 243 544</span>
+            </div>
+            <div class="contact-item">
+                <i class="fa-solid fa-envelope"></i>
+                <a href="mailto:lazaro199710@gmail.com">lazaro199710@gmail.com</a>
+            </div>
+            <div class="contact-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Bairro 3 de Inhamissa, Cidade de XAI-XAI</span>
+            </div>
+            <div class="contact-item">
+                <i class="fa-brands fa-github"></i>
+                <a href="https://github.com/MrCyberx258" target="_blank">github.com/MrCyberx258</a>
+            </div>
+            <div class="contact-item">
+                <i class="fa-brands fa-facebook"></i>
+                <span>Lázaro Jr.</span>
+            </div>
+            <div class="contact-item">
+                <i class="fa-brands fa-tiktok"></i>
+                <span>Mr CyberX</span>
+            </div>
+        </div>
+
+        <div class="sidebar-section">
+            <h2 class="sidebar-title">Competências</h2>
+            <ul class="skills-list">
+                <li>Elevado sentido de responsabilidade e ética profissional</li>
+                <li>Planeamento e organização pedagógica</li>
+                <li>Capacidade de liderança e coordenação académica</li>
+                <li>Excelente comunicação oral e escrita</li>
+                <li>Criatividade e resolução de problemas</li>
+                <li>Orientação para qualidade e melhoria contínua</li>
+                <li>Capacidade analítica e pensamento lógico</li>
+                <li>Facilidade de aprendizagem de novas tecnologias</li>
+            </ul>
+        </div>
+
+        <div class="sidebar-section">
+            <h2 class="sidebar-title">Tecnologia & Dev</h2>
+            <ul class="skills-list">
+                <li>Python, Haskell, Linguagem C</li>
+                <li>Desenvolvimento Web (HTML)</li>
+                <li>Lógica de Programação & Estruturas de Dados</li>
+                <li>Desenvolvimento de Chatbots</li>
+                <li>IA em contexto académico</li>
+                <li>Microsoft Excel, Word e PowerPoint</li>
+            </ul>
+        </div>
+
+        <div class="sidebar-section">
+            <h2 class="sidebar-title">Idiomas</h2>
+            <ul class="lang-list">
+                <li>Português</li>
+                <li>Inglês</li>
+                <li>Changana</li>
+                <li>Xitswa</li>
+            </ul>
+        </div>
+    </aside>
+
+    <main class="main-content">
+        
+        <section class="main-section">
+            <h2 class="main-title"><i class="fa-solid fa-user"></i> Resumo</h2>
+            <p class="resume-text">
+                Professor e estudante de Licenciatura em Informática, com experiência no ensino primário e secundário, coordenação pedagógica e desenvolvimento de soluções tecnológicas aplicadas à educação. Profissional proactivo, inovador e orientado a resultados, com forte interesse em desenvolvimento de software, inteligência artificial e tecnologia educacional. Destaca-se pela liderança, responsabilidade e capacidade de integrar tecnologia no processo de ensino e aprendizagem.
+            </p>
+        </section>
+
+        <section class="main-section">
+            <h2 class="main-title"><i class="fa-solid fa-briefcase"></i> Experiência Profissional</h2>
+            
+            <div class="timeline-item">
+                <div class="timeline-header">
+                    <span class="timeline-title">Professor</span>
+                    <span class="timeline-date">2025 - Presente</span>
+                </div>
+                <div class="timeline-institution">Escola Secundária Marien Ngouabi</div>
+                <p class="timeline-desc">Lecionação no Ensino Secundário; Integração de recursos tecnológicos nas actividades pedagógicas; Participação activa na organização académica.</p>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-header">
+                    <span class="timeline-title">Coordenador do 2º Ciclo</span>
+                    <span class="timeline-date">2025 - 2025</span>
+                </div>
+                <div class="timeline-institution">Escola Secundária Marien Ngouabi</div>
+                <p class="timeline-desc">Coordenação pedagógica do ciclo; Supervisão de planificações; Apoio metodológico aos docentes.</p>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-header">
+                    <span class="timeline-title">Professor</span>
+                    <span class="timeline-date">2020 - 2025</span>
+                </div>
+                <div class="timeline-institution">Escola Primária de Chamane</div>
+                <p class="timeline-desc">Lecionação no Ensino Primário Geral; Ponto focal de desporto; Ponto focal de estudo da legislação; Planeamento e avaliação contínua; Acompanhamento individual do desempenho dos alunos.</p>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-header">
+                    <span class="timeline-title">Orientador Académico</span>
+                    <span class="timeline-date">2015 - Presente</span>
+                </div>
+                <div class="timeline-institution">Trabalho Independente</div>
+                <p class="timeline-desc">Apoio a estudantes do Ensino Secundário; Preparação para exames de admissão; Explicações e reforço escolar.</p>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-header">
+                    <span class="timeline-title">MMV - Eleições Gerais</span>
+                    <span class="timeline-date">2018 - 2019</span>
+                </div>
+                <div class="timeline-institution">CNE / STAE</div>
+                <p class="timeline-desc">Participação em processos eleitorais com responsabilidade, ética e imparcialidade.</p>
+            </div>
+        </section>
+
+        <section class="main-section">
+            <h2 class="main-title"><i class="fa-solid fa-graduation-cap"></i> Educação</h2>
+            
+            <div class="timeline-item">
+                <div class="timeline-header">
+                    <span class="timeline-title">Licenciatura em Informática</span>
+                    <span class="timeline-date">2025 - Em curso</span>
+                </div>
+                <div class="timeline-institution">UNISAVE (Universidade Save)</div>
+                <p class="timeline-desc">Formação superior em Informática com foco em programação, estruturas de dados, desenvolvimento de software e aplicações de Inteligência Artificial.</p>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-header">
+                    <span class="timeline-title">Curso Médio de Formação de Professores Primários</span>
+                    <span class="timeline-date">2022 - 2023</span>
+                </div>
+                <div class="timeline-institution">IFP de Chicuque | <span class="grade">Nota: 18</span></div>
+                <p class="timeline-desc">Formação pedagógica para docência no Ensino Primário, incluindo didáctica, planificação e avaliação.</p>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-header">
+                    <span class="timeline-title">Curso Básico de Formação de Professores Primários</span>
+                    <span class="timeline-date">2018 - 2018</span>
+                </div>
+                <div class="timeline-institution">IFP Eduardo Chivambo Mondlane | <span class="grade">Nota: 14</span></div>
+                <p class="timeline-desc">Formação pedagógica inicial para lecionação no Ensino Primário Geral.</p>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-header">
+                    <span class="timeline-title">2º Ciclo do Ensino Secundário Geral</span>
+                    <span class="timeline-date">2015 - 2016</span>
+                </div>
+                <div class="timeline-institution">Escola Secundária de Inhamissa | <span class="grade">Nota: 12</span></div>
+                <p class="timeline-desc">Conclusão do Ensino Secundário Geral.</p>
+            </div>
+        </section>
+
+        <section class="main-section">
+            <h2 class="main-title"><i class="fa-solid fa-award"></i> Certificações e Prémios</h2>
+            
+            <div class="timeline-item">
+                <div class="timeline-header">
+                    <span class="timeline-title">1º Lugar nas Jornadas Científicas - Projecto UnisavelA</span>
+                    <span class="timeline-date">2025</span>
+                </div>
+                <div class="timeline-institution">Universidade Save (UNISAVE)</div>
+                <p class="timeline-desc">Premiação pela criação do chatbot de Inteligência Artificial "UnisavelA", desenvolvido como solução tecnológica para apoio académico e orientação estudantil.</p>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-header">
+                    <span class="timeline-title">Melhor Professor a Nível da Escola</span>
+                    <span class="timeline-date">2022</span>
+                </div>
+                <div class="timeline-institution">Escola Primária de Chamane</div>
+                <p class="timeline-desc">Reconhecimento pelo desempenho pedagógico, dedicação profissional e contribuição para a melhoria do processo de ensino e aprendizagem.</p>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-header">
+                    <span class="timeline-title">Chefe da Turma - 1º Ano do Curso de Informática</span>
+                    <span class="timeline-date">2025</span>
+                </div>
+                <div class="timeline-institution">Universidade Save (UNISAVE)</div>
+                <p class="timeline-desc">Eleito para representar a turma, coordenar actividades académicas e apoiar na comunicação entre estudantes e docentes.</p>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-header">
+                    <span class="timeline-title">Certificado em Técnicas de Pesquisa de Dados</span>
+                    <span class="timeline-date">2018</span>
+                </div>
+                <div class="timeline-institution">IPSOS</div>
+                <p class="timeline-desc">Formação em metodologias de recolha, análise e tratamento de dados em estudos de pesquisa.</p>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-header">
+                    <span class="timeline-title">Capacitação para Pontos Focais de Estudo da Legislação</span>
+                    <span class="timeline-date">2021</span>
+                </div>
+                <div class="timeline-institution">Sector da Educação</div>
+                <p class="timeline-desc">Formação voltada à aplicação e acompanhamento da legislação no contexto escolar.</p>
+            </div>
+        </section>
+
+    </main>
+</div>
+
+<script>
+    // Função para calcular a idade exata com base na data atual
+    function calcularIdade(dataNascimento) {
+        const hoje = new Date();
+        const nascimento = new Date(dataNascimento);
+        let idade = hoje.getFullYear() - nascimento.getFullYear();
+        const mes = hoje.getMonth() - nascimento.getMonth();
+        
+        if (mes < 0 || (mes === 0 && hoje.getDate() < nascimento.getDate())) {
+            idade--;
+        }
+        return idade;
+    }
+
+    // Executa ao carregar a página
+    document.addEventListener("DOMContentLoaded", function() {
+        const dataNasc = "1997-10-12"; // Formato AAAA-MM-DD
+        document.getElementById("age").innerText = calcularIdade(dataNasc);
+    });
+</script>
+
+</body>
 </html>
+
 
